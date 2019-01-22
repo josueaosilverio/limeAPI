@@ -13,7 +13,7 @@ class CreateCollectionRecipeTable extends Migration
      */
     public function up()
     {
-        Schema::table('collection_recipe', function (Blueprint $table) {
+        Schema::create('collection_recipe', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('collection_id');
             $table->integer('recipe_id');

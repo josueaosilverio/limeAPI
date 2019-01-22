@@ -13,7 +13,7 @@ class CreateItemUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('item_user', function (Blueprint $table) {
+        Schema::create('item_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('item_id');
             $table->integer('user_id');
