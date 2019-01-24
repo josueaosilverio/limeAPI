@@ -3,8 +3,15 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use Laravel\Socialite\Facades\Socialite;
 
+/**
+ * Class LoginController
+ * @package App\Http\Controllers\Auth
+ */
 class LoginController extends Controller
 {
     /*
@@ -36,4 +43,49 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    /**
+     * Redirect the user to the GitHub authentication page.
+     *
+     * @param  string $provider
+     * @return \Illuminate\Http\Response
+     */
+    public function redirectToProvider($provider)
+    {
+        return Socialite::driver($provider)->redirect();
+    }
+
+    /**
+     * Obtain the user information from GitHub.
+     *
+     * @param  string $provider
+     * @return \Illuminate\Http\Response
+     */
+    public function handleProviderCallback($provider)
+    {
+        $socialUser = Socialite::driver($provider)->user();
+
+
+        $user = User::where('provider', $provider)->where('provider_id', $socialUser->getId())->first();
+        // $user->token;
+
+        if (!$user)
+            $user = User::create([
+                'name' => $socialUser->getName(),
+                'username' => $socialUser->getNickname(),
+                'email' => $socialUser->getEmail(),
+                'password',
+                'tutorial',
+                'provider_id' => $socialUser->getId(),
+                'provider' => $provider
+            ]);
+
+        Auth::login($user, true);
+
+        //TODO VER AS KEYS DO GOOGLE
+        //TODO VER A CENA DO HTTPS
+
+        return redirect($this->redirectTo);
+    }
+
 }
