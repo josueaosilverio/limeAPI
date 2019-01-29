@@ -14,7 +14,15 @@ class CollectionCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $result = CollectionCategory::all();
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -35,7 +43,16 @@ class CollectionCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->only(['name']);
+        $result = CollectionCategory::create($data);
+        $message = [
+            'status' => '201',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 201)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -46,7 +63,15 @@ class CollectionCategoryController extends Controller
      */
     public function show(CollectionCategory $collectionCategory)
     {
-        //
+        $result = $collectionCategory;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -69,17 +94,38 @@ class CollectionCategoryController extends Controller
      */
     public function update(Request $request, CollectionCategory $collectionCategory)
     {
-        //
+        $data = $request->only('name');
+        $collectionCategory->name = $data['name'];
+        $collectionCategory->save();
+        $result = $collectionCategory;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\CollectionCategory  $collectionCategory
+     * @param  \App\CollectionCategory $collectionCategory
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(CollectionCategory $collectionCategory)
     {
-        //
+        $collectionCategory->delete();
+        $result = "Collection Category deleted";
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "text/plain; charset=utf-8");
+
     }
 }

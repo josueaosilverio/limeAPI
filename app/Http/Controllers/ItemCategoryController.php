@@ -14,7 +14,15 @@ class ItemCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $result = ItemCategory::all();
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -35,7 +43,16 @@ class ItemCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->only(['name']);
+        $result = ItemCategory::create($data);
+        $message = [
+            'status' => '201',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 201)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -46,7 +63,15 @@ class ItemCategoryController extends Controller
      */
     public function show(ItemCategory $itemCategory)
     {
-        //
+        $result = $itemCategory;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -69,17 +94,38 @@ class ItemCategoryController extends Controller
      */
     public function update(Request $request, ItemCategory $itemCategory)
     {
-        //
+        $data = $request->only('name');
+        $itemCategory->name = $data['name'];
+        $itemCategory->save();
+        $result = $itemCategory;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ItemCategory  $itemCategory
+     * @param  \App\ItemCategory $itemCategory
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(ItemCategory $itemCategory)
     {
-        //
+        $itemCategory->delete();
+        $result = "Item Category deleted";
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "text/plain; charset=utf-8");
+
     }
 }

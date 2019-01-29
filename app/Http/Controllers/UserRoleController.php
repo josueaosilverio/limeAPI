@@ -14,8 +14,14 @@ class UserRoleController extends Controller
      */
     public function index()
     {
-        //
-    }
+        $result = UserRole::all();
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");    }
 
     /**
      * Show the form for creating a new resource.
@@ -35,8 +41,15 @@ class UserRoleController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $data = $request->only(['name']);
+        $result = UserRole::create($data);
+        $message = [
+            'status' => '201',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 201)
+            ->header('Content-Type', "application/json; charset=utf-8");    }
 
     /**
      * Display the specified resource.
@@ -46,7 +59,14 @@ class UserRoleController extends Controller
      */
     public function show(UserRole $userRole)
     {
-        //
+        $result = $userRole;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
     }
 
     /**
@@ -69,17 +89,35 @@ class UserRoleController extends Controller
      */
     public function update(Request $request, UserRole $userRole)
     {
-        //
-    }
+        $data = $request->only('name', 'username', 'email', 'password');
+        $userRole->name = $data['name'];
+        $userRole->save();
+        $result = $userRole;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");    }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\UserRole  $userRole
+     * @param  \App\UserRole $userRole
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(UserRole $userRole)
     {
-        //
+        $userRole->delete();
+        $result = "User role deleted";
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "text/plain; charset=utf-8");
     }
 }

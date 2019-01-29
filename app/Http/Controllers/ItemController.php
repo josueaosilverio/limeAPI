@@ -14,7 +14,15 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //
+        $result = Item::all();
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -35,7 +43,16 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->only(['name', 'description', 'item_cat']);
+        $result = Item::create($data);
+        $message = [
+            'status' => '201',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 201)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -46,7 +63,15 @@ class ItemController extends Controller
      */
     public function show(Item $item)
     {
-        //
+        $result = $item;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
@@ -69,17 +94,40 @@ class ItemController extends Controller
      */
     public function update(Request $request, Item $item)
     {
-        //
+        $data = $request->only('name', 'description', 'item_cat');
+        $item->name = $data['name'];
+        $item->description = $data['description'];
+        $item->item_cat = $data['item_cat'];
+        $item->save();
+        $result = $item;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Item  $item
+     * @param  \App\Item $item
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(Item $item)
     {
-        //
+        $item->delete();
+        $result = "Item deleted";
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "text/plain; charset=utf-8");
+
     }
 }
