@@ -133,4 +133,20 @@ class RecipeController extends Controller
         return response($message, 200)
             ->header('Content-Type', "text/plain; charset=utf-8");
     }
+
+
+    public function recipeByName(Request $request)
+    {
+        $data = $request->only(['name']);
+        $result = Recipe::with("items")->where("name", "like", $data["name"])->get();
+        $message = [
+            'status' => '201',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 201)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
+    }
+
 }
