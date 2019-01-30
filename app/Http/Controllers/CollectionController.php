@@ -147,17 +147,19 @@ class CollectionController extends Controller
 
         $priceper = $data['max_price'] / $data['recipe_number'];
 
+        //TESTME Ver se a query está correcta
         $recipes = DB::table('recipes')
-            ->whereBetween("est_price", [0, $priceper + 2])
+            ->whereBetween("est_price", [0, $priceper + ($priceper / 10)])
             ->where('recipe_cat', $data['recipe_cat'])
             ->get();
 
         if (sizeof($recipes) < $data['recipe_number']) {
+            //TODO Adiciona random até ao numero de receitas pedido
             $result = "";
         } else {
+            //TODO Corta o número do array até ser o nº pedido
             $result = "";
         }
-
 
 
         //$result = Collection::create($data);
