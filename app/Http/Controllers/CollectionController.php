@@ -135,7 +135,7 @@ class CollectionController extends Controller
 
 
     /**
-     *TODO
+     *TODO Acabar de construir endpoint da main feature
      * Generates a new collection based on settings
      *
      * @param  \Illuminate\Http\Request $request
@@ -148,7 +148,7 @@ class CollectionController extends Controller
         $priceper = $data['max_price'] / $data['recipe_number'];
 
         $recipes = DB::table('recipes')
-            ->whereBetween("estprice", [$priceper - 2, $priceper + 2])
+            ->whereBetween("est_price", [0, $priceper + 2])
             ->where('recipe_cat', $data['recipe_cat'])
             ->get();
 
