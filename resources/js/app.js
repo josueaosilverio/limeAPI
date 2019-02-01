@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Header from './components/Header'
 import Example from "./components/Example";
-import {Button} from "bootstrap/js/src";
+import LimeButton from "./components/LimeButton";
 
 
 
@@ -14,7 +14,7 @@ class App extends Component {
                 <div>
                     <Header/>
                     <Example/>
-                    <Button label={"Cenas"}/>
+                    <LimeButton label="Putas e vinho verde"/>
                 </div>
             </BrowserRouter>
         )

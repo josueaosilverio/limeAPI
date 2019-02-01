@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components'
 
 const StyledWrapper = styled.div`
-backgroundColor: green;
+
+`;
+const ButtonA = styled.button`
 
 `;
 
-export default class Button extends Component {
-    super(props);
+export default class LimeButton extends Component {
     render() {
         return (
             <StyledWrapper>
-            <button>{this.props.label}</button>
+            <ButtonA className="btn btn-success">{this.props.label}</ButtonA>
             </StyledWrapper>
         );
     }
