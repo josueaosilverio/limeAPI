@@ -12,6 +12,9 @@
 */
 
 Route::get('/', function () {
+    return view('app');
+});
+Route::get('/api', function () {
     return view('welcome');
 });
 
