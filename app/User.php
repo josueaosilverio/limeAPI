@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'username', 'email', 'password', 'tutorial', 'provider_id', 'provider'
+        'name', 'username', 'email', 'password', 'tutorial'
     ];
 
     /**
@@ -25,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'provider_id', 'provider'
     ];
 
     public function collections()

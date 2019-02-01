@@ -69,10 +69,19 @@ class LoginController extends Controller
         $user = User::where('provider', $provider)->where('provider_id', $socialUser->getId())->first();
         // $user->token;
 
+        $user = User::where('provider', $provider)->where('provider_id', $socialUser->getId())->first();
+        // $user->token;
+        $parts = explode("@", $socialUser->getEmail());
+        $username = $parts[0];
+        if ($socialUser->getNickname() != null) {
+            $username = $socialUser->getNickname();
+        }
+
+
         if (!$user)
             $user = User::create([
                 'name' => $socialUser->getName(),
-                'username' => $socialUser->getNickname(),
+                'username' => $username,
                 'email' => $socialUser->getEmail(),
                 'password',
                 'tutorial',
