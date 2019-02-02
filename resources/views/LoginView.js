@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 
 const BackgroundContainer = styled.div`
-background: url("img/login_bg2.jpg") center;
+background: url("img/login_bg.jpg") center;
  position: fixed;
   left: 0;
   right: 0;
