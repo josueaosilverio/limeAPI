@@ -10,7 +10,7 @@ use Laravel\Socialite\Facades\Socialite;
 
 /**
  * Class LoginController
- * @group Login
+ * @group Auth
  * @package App\Http\Controllers\Auth
  */
 class LoginController extends Controller
