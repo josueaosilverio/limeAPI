@@ -13,7 +13,7 @@ class RecipeController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * @group Recipe
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -30,7 +30,7 @@ class RecipeController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * @group Recipe
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -40,7 +40,7 @@ class RecipeController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     * @group Recipe
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -60,7 +60,7 @@ class RecipeController extends Controller
 
     /**
      * Display the specified resource.
-     *
+     * @group Recipe
      * @param  \App\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
@@ -79,7 +79,7 @@ class RecipeController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     * @group Recipe
      * @param  \App\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
@@ -90,7 +90,7 @@ class RecipeController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     * @group Recipe
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Recipe  $recipe
      * @return \Illuminate\Http\Response
@@ -116,7 +116,7 @@ class RecipeController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * @group Recipe
      * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      * @throws \Exception
@@ -135,6 +135,13 @@ class RecipeController extends Controller
     }
 
 
+    /**
+     * Looks for a recipe by name
+     * @group Recipe
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
     public function recipeByName(Request $request)
     {
         $data = $request->only(['name']);

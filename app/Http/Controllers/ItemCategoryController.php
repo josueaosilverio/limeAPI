@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\ItemCategory;
 use Illuminate\Http\Request;
 
+/**
+ * Class ItemCategoryController
+ * @group Item Category
+ * @package App\Http\Controllers
+ */
 class ItemCategoryController extends Controller
 {
     /**

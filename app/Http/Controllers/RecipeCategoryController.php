@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\RecipeCategory;
 use Illuminate\Http\Request;
 
+/**
+ * Class RecipeCategoryController
+ * @group Recipe Category
+ * @package App\Http\Controllers
+ */
 class RecipeCategoryController extends Controller
 {
     /**

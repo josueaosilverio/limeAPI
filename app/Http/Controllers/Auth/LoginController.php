@@ -10,6 +10,7 @@ use Laravel\Socialite\Facades\Socialite;
 
 /**
  * Class LoginController
+ * @group Login
  * @package App\Http\Controllers\Auth
  */
 class LoginController extends Controller
@@ -45,7 +46,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Redirect the user to the GitHub authentication page.
+     * Redirect the user to the Social authentication page.
      *
      * @param  string $provider
      * @return \Illuminate\Http\Response
@@ -56,7 +57,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Obtain the user information from GitHub.
+     * Obtain the user information from the social login.
      *
      * @param  string $provider
      * @return \Illuminate\Http\Response
@@ -90,9 +91,6 @@ class LoginController extends Controller
             ]);
 
         Auth::login($user, true);
-
-        //TODO VER AS KEYS DO GOOGLE
-        //TODO VER A CENA DO HTTPS
 
         return redirect($this->redirectTo);
     }

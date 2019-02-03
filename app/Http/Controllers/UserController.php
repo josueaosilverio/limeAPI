@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * @group User
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -26,7 +26,7 @@ class UserController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * @group User
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -36,7 +36,7 @@ class UserController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     * @group User
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
@@ -58,7 +58,7 @@ class UserController extends Controller
 
     /**
      * Display the specified resource.
-     *
+     * @group User
      * @param  \App\User $user
      * @return \Illuminate\Http\Response
      */
@@ -77,7 +77,7 @@ class UserController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     * @group User
      * @param  \App\User $user
      * @return \Illuminate\Http\Response
      */
@@ -88,7 +88,7 @@ class UserController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     * @group User
      * @param  \Illuminate\Http\Request $request
      * @param  \App\User $user
      * @return \Illuminate\Http\Response
@@ -114,7 +114,7 @@ class UserController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * @group User
      * @param  \App\User $user
      * @return \Illuminate\Http\Response
      * @throws \Exception

@@ -13,3 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 Route::resource('user', 'UserController');
+Route::resource('collectioncategory', 'CollectionCategoryController');
+Route::resource('collection', 'CollectionController');
+Route::resource('itemcategory', 'ItemCategoryController');
+Route::resource('item', 'ItemController');
+Route::resource('recipecategory', 'RecipeCategoryController');
+Route::resource('recipe', 'RecipeController');
+Route::resource('userrole', 'UserRoleController');
