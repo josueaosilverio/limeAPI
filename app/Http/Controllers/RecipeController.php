@@ -18,7 +18,7 @@ class RecipeController extends Controller
      */
     public function index()
     {
-        $result = Recipe::all();
+        $result = Recipe::with("items")->get();
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',
@@ -41,12 +41,12 @@ class RecipeController extends Controller
     /**
      * Store a newly created resource in storage.
      * @group Recipe
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $data = $request->only(['name', 'recipe_cat', 'description', "est_price"]);
+        $data = $request->only(['name', 'recipe_cat', 'description', "est_price", "feeds", "kcal", "time", "image"]);
         $result = Recipe::create($data);
         $message = [
             'status' => '201',
@@ -61,12 +61,12 @@ class RecipeController extends Controller
     /**
      * Display the specified resource.
      * @group Recipe
-     * @param  \App\Recipe  $recipe
+     * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      */
     public function show(Recipe $recipe)
     {
-        $result = $recipe;
+        $result = Recipe::with("items")->find($recipe->id);
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',
@@ -80,7 +80,7 @@ class RecipeController extends Controller
     /**
      * Show the form for editing the specified resource.
      * @group Recipe
-     * @param  \App\Recipe  $recipe
+     * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      */
     public function edit(Recipe $recipe)
@@ -91,17 +91,21 @@ class RecipeController extends Controller
     /**
      * Update the specified resource in storage.
      * @group Recipe
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Recipe  $recipe
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Recipe $recipe)
     {
-        $data = $request->only('name', 'recipe_cat', 'description', 'est_price');
+        $data = $request->only('name', 'recipe_cat', 'description', 'est_price', "feeds", "kcal", "time", "image");
         $recipe->name = $data['name'];
         $recipe->recipe_cat = $data['recipe_cat'];
         $recipe->description = $data['description'];
         $recipe->est_price = $data['est_price'];
+        $recipe->feeds = $data['feeds'];
+        $recipe->time = $data['time'];
+        $recipe->kcal = $data['kcal'];
+        $recipe->image = $data['image'];
         $recipe->save();
         $result = $recipe;
         $message = [

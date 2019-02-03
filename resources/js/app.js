@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Header from './components/Header'
-import Example from "./components/Example";
 import LoginView from "../views/LoginView";
+import Footer from "./components/Footer";
+import ReceitaView from "../views/ReceitaView";
 
 
-const LoginHeader = () => {
+const LoginFooter = () => {
     const location = window.location.pathname;
-    if (location != "/login") {
-        return <Header />;
+    if (location !== "/login") {
+        return <Footer/>;
     }
     return null;
 };
@@ -21,10 +21,11 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <LoginHeader/>
                     <Switch>
                         <Route exact path='/login' component={LoginView}/>
+                        <Route exact path='/receita/:id' component={ReceitaView}/>
                     </Switch>
+                    <LoginFooter/>
                 </div>
             </BrowserRouter>
         )

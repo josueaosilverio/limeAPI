@@ -47,21 +47,21 @@ class SocialLoginButton extends Component {
                 <Wrapper>
                     <a href="login/facebook">
                         <BtnFacebook>
-                            <i className="fab fa-facebook"/>
+                            <i className="fab fa-facebook"></i>
                             &nbsp;&nbsp;Login with Facebook
                         </BtnFacebook>
                     </a>
                     <br/>
                     <a href="login/twitter">
                         <BtnTwitter>
-                            <i className="fab fa-twitter"/>
+                            <i className="fab fa-twitter"></i>
                             &nbsp;&nbsp;Login with Twitter
                         </BtnTwitter>
                     </a>
                     <br/>
                     <a href="login/google">
                         <BtnGoogle>
-                            <i className="fab fa-google"/>
+                            <i className="fab fa-google"></i>
                             &nbsp;&nbsp;Login with Google
                         </BtnGoogle>
                     </a>

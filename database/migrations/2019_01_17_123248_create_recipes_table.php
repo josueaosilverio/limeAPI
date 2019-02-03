@@ -20,6 +20,11 @@ class CreateRecipesTable extends Migration
             $table->integer('recipe_cat');
             $table->text('description');
             $table->string('est_price');
+            $table->integer('kcal');
+            $table->string('time');
+            $table->string('image');
+            $table->integer('feeds');
+            $table->timestamps();
         });
     }
 
