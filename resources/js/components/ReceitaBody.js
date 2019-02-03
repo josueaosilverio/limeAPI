@@ -8,10 +8,18 @@ height: auto;
 `;
 
 export default class ReceitaBody extends Component {
+    constructor(props){
+        super(props);
+    }
+    
+    componentDidUpdate() {
+        console.log(this.props);
+    }
+
     render() {
         return (
             <Container>
-asdasdasdad
+                description: {this.props.description}
             </Container>
         );
     }

@@ -10,7 +10,7 @@ export default class ReceitaHeader extends Component {
     render() {
         return (
             <Container>
-a
+                {this.props.recipe}
             </Container>
         );
     }
