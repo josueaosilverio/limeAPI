@@ -33070,8 +33070,8 @@ function (_Component) {
   }
 
   _createClass(ReceitaBody, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
+    key: "componentWillReceiveProps",
+    value: function componentWillReceiveProps() {
       console.log(this.props);
     }
   }, {

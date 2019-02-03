@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0662c2b-70f2-4c52-8579-3759a20997cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ReceitaBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ReceitaBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ReceitaHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ReceitaHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ReceitaView.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ReceitaView.js" afterDir="false" />
-    </list>
+    <list default="true" id="f0662c2b-70f2-4c52-8579-3759a20997cd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/ReceitaView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="253">
               <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -59,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="258">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -170,8 +162,8 @@
         <option value="$PROJECT_DIR$/app/Recipe.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecipeController.php" />
         <option value="$PROJECT_DIR$/resources/js/components/ReceitaHeader.js" />
-        <option value="$PROJECT_DIR$/resources/views/ReceitaView.js" />
         <option value="$PROJECT_DIR$/resources/js/components/ReceitaBody.js" />
+        <option value="$PROJECT_DIR$/resources/views/ReceitaView.js" />
       </list>
     </option>
   </component>
@@ -437,12 +429,12 @@
       <workItem from="1549037244702" duration="10234000" />
       <workItem from="1549119766846" duration="8765000" />
       <workItem from="1549202514734" duration="11161000" />
-      <workItem from="1549226476420" duration="2572000" />
+      <workItem from="1549226476420" duration="2948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65118000" />
+    <option name="totallyTimeSpent" value="65494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -828,22 +820,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ReceitaView.js">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="258">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/ReceitaView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="253">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -12,7 +12,7 @@ export default class ReceitaBody extends Component {
         super(props);
     }
     
-    componentDidUpdate() {
+    componentWillReceiveProps() {
         console.log(this.props);
     }
 
