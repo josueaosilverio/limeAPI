@@ -11,9 +11,9 @@ export default class ReceitaBody extends Component {
     constructor(props){
         super(props);
     }
-    
-    componentWillReceiveProps() {
-        console.log(this.props);
+
+    componentWillUpdate(nextProps, nextState, nextContext) {
+    console.log(nextProps);
     }
 
     render() {

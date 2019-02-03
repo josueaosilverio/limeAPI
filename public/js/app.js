@@ -33070,9 +33070,9 @@ function (_Component) {
   }
 
   _createClass(ReceitaBody, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps() {
-      console.log(this.props);
+    key: "componentWillUpdate",
+    value: function componentWillUpdate(nextProps, nextState, nextContext) {
+      console.log(nextProps);
     }
   }, {
     key: "render",
