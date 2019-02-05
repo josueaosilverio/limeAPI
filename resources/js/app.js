@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import LoginView from "../views/LoginView";
 import Footer from "./components/Footer";
 import ReceitaView from "../views/ReceitaView";
+import CartView from "../views/CartView";
 
 
 const LoginFooter = () => {
@@ -23,6 +24,7 @@ class App extends Component {
                 <div>
                     <Switch>
                         <Route exact path='/login' component={LoginView}/>
+                        <Route exact path='/cart' component={CartView}/>
                         <Route exact path='/receita/:id' component={ReceitaView}/>
                     </Switch>
                     <LoginFooter/>

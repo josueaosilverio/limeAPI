@@ -88,7 +88,7 @@ export default class ReceitaBody extends Component {
                                         <ListGroup variant="flush">
                                             {
                                                 (this.props.items != null) ? this.props.items.map((el, index) => (
-                                                    <ListGroup.Item key={index}>{el.name}</ListGroup.Item>
+                                                    <ListGroup.Item key={index}>{el.name}   {el.pivot.quantity}</ListGroup.Item>
                                                 )) : <ListGroup.Item>PlaceHolder</ListGroup.Item>
 
                                             }
