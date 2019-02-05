@@ -6,9 +6,9 @@ const FooterDiv = styled.div`
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 30;
   width: 100%;
-  height: 10%;
+  height: 10vh;
   background-color: #FFFFFF;
   color: #666666;
   
