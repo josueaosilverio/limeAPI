@@ -6,7 +6,8 @@ import Col from 'react-bootstrap/Col'
 import Nav from "react-bootstrap/Nav";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-
+import {connect} from "react-redux";
+import {carrinhoDelete} from "../actions/actions";
 
 const Container = styled.div`
   background: #ECF2F7;
@@ -72,16 +73,23 @@ const NavPill = styled(Nav.Link)`
     color: white !important;
   }
 `;
+const mapStateToProps = state => {
+    return {carrinho: state.CarrinhoReducer}
+};
 
-
+const mapDispatchToProps = dispatch => {
+    return{
+        carrinhoDelete: (payload) => dispatch(fetchRecipes(payload)),
+    }
+};
 export default class Cart extends Component {
     constructor(props) {
         super(props);
     }
 
-
+//todo ver cenas receita e ingred
     render() {
-        if (this.props.cart.length > 0) {
+        if (this.props.carrinho.length > 0) {
             return (
                 <Container>
                     <Tab.Container defaultActiveKey="recipe">
@@ -107,8 +115,8 @@ export default class Cart extends Component {
                                         <Card>
                                             <ListGroup variant="flush">
                                                 {
-                                                    (this.props.cart != null) ? this.props.cart.map((el, index) => (
-                                                        <ListGroup.Item key={index}> <i className="fas fa-check"></i> {el.name}</ListGroup.Item>
+                                                    (this.props.carrinho != null) ? this.props.carrinho.map((el, index) => (
+                                                        <ListGroup.Item key={index}> <i className="fas fa-check"></i> {el.name} <button onClick={carrinhoDelete(el.id)}>delete</button></ListGroup.Item>
                                                     )) : <ListGroup.Item>PlaceHolder</ListGroup.Item>
 
                                                 }
@@ -138,3 +146,6 @@ export default class Cart extends Component {
         }
     }
 }
+const CartC = connect(mapStateToProps, mapDispatchToProps)(Cart);
+
+export default CartC
