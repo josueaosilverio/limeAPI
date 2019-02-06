@@ -11,6 +11,8 @@ import ColecList from './components/ColecList';
 import store from "./store/store";
 import RecipeDetail from "./components/RecipeDetail";
 import ColecDetail from "./components/ColecDetail";
+import CartView from "../views/CartView";
+
 
 const LoginFooter = () => {
     const location = window.location.pathname;
@@ -31,6 +33,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/login' component={LoginView}/>
                         <Route exact path='/lel' component={HomeList}/>
+                        <Route exact path='/cart' component={CartView}/>
                         <Route exact path='/receita/:id' component={ReceitaView}/>
                         <Route path="/recipe/:id" component={RecipeDetail} />
                         <Route path="/coleccion/:id" component={ColecDetail} />

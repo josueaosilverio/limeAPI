@@ -22,7 +22,7 @@ class Recipe extends Model
 
     public function items()
     {
-        return $this->belongsToMany('App\Item');
+        return $this->belongsToMany('App\Item')->withPivot("quantity");
     }
 
 

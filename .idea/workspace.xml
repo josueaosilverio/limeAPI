@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f0662c2b-70f2-4c52-8579-3759a20997cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Footer.js" afterDir="false" />
+=======
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +36,9 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="limeapi" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -56,8 +62,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Footer.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="315">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
+=======
+            <state relative-caret-position="805">
+              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -66,6 +77,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/resources/js/actions/actions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -79,15 +91,32 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+=======
+        <entry file="file://$PROJECT_DIR$/resources/views/CartView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/ColecDetail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
               <caret line="46" column="97" selection-start-line="46" selection-start-column="97" selection-end-line="46" selection-end-column="97" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/Cart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -95,6 +124,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,6 +155,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -138,7 +170,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Laravel</find>
+<<<<<<< HEAD
       <find>getState</find>
+=======
+      <find>margin</find>
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,6 +183,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/database/migrations/2019_01_17_163708_create_collection_recipe_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_01_17_164126_create_item_user_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_01_17_163846_create_item_recipe_table.php" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
         <option value="$PROJECT_DIR$/public/asdasd.css" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
@@ -177,6 +219,7 @@
         <option value="$PROJECT_DIR$/resources/views/LoginView.js" />
         <option value="$PROJECT_DIR$/resources/js/reducers/HomeList.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Header.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/resources/js/actions.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
@@ -198,6 +241,23 @@
         <option value="$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js" />
         <option value="$PROJECT_DIR$/resources/js/actions/actions.js" />
         <option value="$PROJECT_DIR$/resources/js/components/RecipeDetail.js" />
+=======
+        <option value="$PROJECT_DIR$/resources/js/components/SocialLoginButton.js" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ItemsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_01_17_123248_create_recipes_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/RecipesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RecipeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/ReceitaView.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/ReceitaHeader.js" />
+        <option value="$PROJECT_DIR$/app/Recipe.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/ReceitaBody.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/Footer.js" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/CartView.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/Cart.js" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
       </list>
     </option>
   </component>
@@ -304,6 +364,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
+<<<<<<< HEAD
     <option name="x" value="986" />
     <option name="y" value="25" />
     <option name="width" value="934" />
@@ -311,6 +372,12 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+=======
+    <option name="x" value="190" />
+    <option name="y" value="27" />
+    <option name="width" value="1315" />
+    <option name="height" value="555" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -322,6 +389,7 @@
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="api-ssj2" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-ssj2" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -329,6 +397,21 @@
               <item name="api-ssj2" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-ssj2" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="limeapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="limeapi" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="limeapi" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
             </path>
             <path>
               <item name="api-ssj2" type="b2602c69:ProjectViewProjectNode" />
@@ -372,10 +455,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+=======
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/resources/js/reducers" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$/public/img" />
@@ -383,6 +474,13 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
+=======
+      <recent name="$PROJECT_DIR$/public/img/draw" />
+      <recent name="$PROJECT_DIR$/resources/js/components" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/database/seeds" />
+      <recent name="$PROJECT_DIR$/public/docs/images" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
     </key>
   </component>
   <component name="RunDashboard">
@@ -397,11 +495,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -426,6 +539,7 @@
       <workItem from="1548948026274" duration="3183000" />
       <workItem from="1549033035220" duration="646000" />
       <workItem from="1549037244702" duration="10234000" />
+<<<<<<< HEAD
       <workItem from="1549119766846" duration="8703000" />
       <workItem from="1549222147176" duration="3062000" />
       <workItem from="1549226405861" duration="4976000" />
@@ -437,11 +551,26 @@
       <workItem from="1549379496748" duration="14161000" />
       <workItem from="1549405903952" duration="6075000" />
       <workItem from="1549467781085" duration="299000" />
+=======
+      <workItem from="1549119766846" duration="8765000" />
+      <workItem from="1549202514734" duration="11161000" />
+      <workItem from="1549226476420" duration="2948000" />
+      <workItem from="1549229987183" duration="64000" />
+      <workItem from="1549230318962" duration="121000" />
+      <workItem from="1549283938502" duration="6035000" />
+      <workItem from="1549291416352" duration="18726000" />
+      <workItem from="1549363926593" duration="22254000" />
+      <workItem from="1549466229356" duration="369000" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="114134000" />
+=======
+    <option name="totallyTimeSpent" value="113063000" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,7 +585,43 @@
     <frame x="53" y="25" width="1867" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13783635" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4975" visible="true" weight="0.17826428" />
+      <window_info id="Structure" order="1" sideWeight="0.5025" side_tool="true" weight="0.17826428" />
+      <window_info id="npm" order="2" sideWeight="0.5025" side_tool="true" weight="0.17826428" />
+      <window_info id="Favorites" order="3" sideWeight="0.5025" side_tool="true" weight="0.17826428" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32718122" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002746" side_tool="true" weight="0.3261339" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49972543" visible="true" weight="0.2386609" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874355" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2147651" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+<<<<<<< HEAD
+=======
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17279124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -470,18 +635,20 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002746" side_tool="true" weight="0.3261339" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49972543" visible="true" weight="0.2386609" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874355" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21644296" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -490,6 +657,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/js/src/button.js">
+=======
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
@@ -641,6 +817,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -738,10 +915,105 @@
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/public/docs/images/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_17_123248_create_recipes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_17_160433_create_recipe_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ItemsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/RecipesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecipeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Recipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/js/actions/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -762,10 +1034,62 @@
           <caret line="46" column="97" selection-start-line="46" selection-start-column="97" selection-end-line="46" selection-end-column="97" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ReceitaView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/LoginView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/draw/cart.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/SocialLoginButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/js/components/RecipeDetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -794,6 +1118,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/CartView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+>>>>>>> 46ad94fffeb06928035cb93c736e99b5bdc8465d
         </state>
       </provider>
     </entry>

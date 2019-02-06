@@ -6,9 +6,9 @@ const FooterDiv = styled.div`
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 30;
   width: 100%;
-  height: 10%;
+  height: 10vh;
   background-color: #FFFFFF;
   color: #666666;
   
@@ -35,8 +35,8 @@ const Footer = () => (
         <div className='container nav'>
             <Link className="nav-item" to='/'><MenuItem><i className="fas fa-home"></i></MenuItem></Link>
             <Link className="nav-item" to='/login'><MenuItem><i className="fas fa-book"></i></MenuItem></Link>
-            <Link className="nav-item" to='/receita/1'><MenuItem><i className="fas fa-shopping-cart"></i></MenuItem></Link>
-            <Link className="nav-item" to='/lel'><MenuItem><i className="fas fa-cog"></i></MenuItem></Link>
+            <Link className="nav-item" to='/cart'><MenuItem><i className="fas fa-shopping-cart"></i></MenuItem></Link>
+            <Link className="nav-item" to='/'><MenuItem><i className="fas fa-cog"></i></MenuItem></Link>
         </div>
     </FooterDiv>
 );
