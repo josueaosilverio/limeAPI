@@ -79,7 +79,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return{
-        carrinhoDelete: (payload) => dispatch(fetchRecipes(payload)),
+        carrinhoDelete: (payload) => dispatch(carrinhoDelete(payload)),
     }
 };
 export default class Cart extends Component {
@@ -116,7 +116,7 @@ export default class Cart extends Component {
                                             <ListGroup variant="flush">
                                                 {
                                                     (this.props.carrinho != null) ? this.props.carrinho.map((el, index) => (
-                                                        <ListGroup.Item key={index}> <i className="fas fa-check"></i> {el.name} <button onClick={carrinhoDelete(el.id)}>delete</button></ListGroup.Item>
+                                                        <ListGroup.Item key={index}> <i className="fas fa-check"></i> {el.name} <button onClick={this.props.carrinhoDelete(el.id)}>delete</button></ListGroup.Item>
                                                     )) : <ListGroup.Item>PlaceHolder</ListGroup.Item>
 
                                                 }
