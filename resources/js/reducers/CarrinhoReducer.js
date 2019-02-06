@@ -2,7 +2,7 @@ import {CARRINHO_ADD, CARRINHO_DELETE} from "../actions/constants";
 
 const initialState = [];
 
-const carrinhoReducer = (state = initialState, action) => {
+const CarrinhoReducer = (state = initialState, action) => {
     switch(action.type){
         case CARRINHO_ADD:
             if(Array.isArray(action.payload)){
@@ -24,4 +24,4 @@ const carrinhoReducer = (state = initialState, action) => {
             return state;
     }
 };
-export default carrinhoReducer;
+export default CarrinhoReducer;

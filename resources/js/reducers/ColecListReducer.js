@@ -2,7 +2,7 @@ import {COLECCAO_DELETE, FETCH_COLEC, RECEITA_DELETE, COLECCAO_CREATE, RECEITA_A
 
 const initialState = [];
 
-const colecListReducer = (state = initialState, action) => {
+const ColecListReducer = (state = initialState, action) => {
     switch(action.type){
         case FETCH_COLEC:
             //fetch das recipes
@@ -34,4 +34,4 @@ const colecListReducer = (state = initialState, action) => {
     }
 };
 
-export default colecListReducer;
+export default ColecListReducer;

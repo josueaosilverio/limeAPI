@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux';
-import homeListReducer from './HomeListReducer';
-import colecListReducer from './ColecListReducer';
 
-import carrinhoReducer from "./carrinhoReducer";
+import HomeListReducer from './HomeListReducer';
+import ColecListReducer from './ColecListReducer';
+import CarrinhoReducer from "./CarrinhoReducer";
 
 export const rootReducer = combineReducers(
-    {homeListReducer, colecListReducer, carrinhoReducer
+    {HomeListReducer, ColecListReducer, CarrinhoReducer
     }
 );

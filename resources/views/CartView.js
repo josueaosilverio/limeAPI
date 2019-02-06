@@ -1,18 +1,17 @@
 import React, {Component} from 'react'
-import Cart from "../js/components/Cart";
+import CartC from "../js/components/Cart";
 
 
 class CartView extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {cart: []};
+    constructor() {
+        super();
     }
 
     render() {
         return (
             <div>
-                <Cart cart={this.state.cart}/>
+                <CartC cart={this.state.cart}/>
             </div>
         )
     }

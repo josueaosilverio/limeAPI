@@ -13,7 +13,7 @@ export const fetchRecipes = (payload) => ({type: FETCH_RECIPES, payload:payload}
 export const fetchColec = (payload) => ({type: FETCH_COLEC, payload:payload});
 
 //CARRINHO
-export const carrinho = (payload) => ({type: CARRINHO_ADD, payload:payload});
+export const carrinhoAdd = (payload) => ({type: CARRINHO_ADD, payload:payload});
 export const carrinhoDelete = (payload => ({type: CARRINHO_DELETE, payload: payload}));
 
 //COLECCAO

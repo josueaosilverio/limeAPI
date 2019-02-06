@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import LoginView from "../views/LoginView";
 import Footer from "./components/Footer";
-import ReceitaView from "../views/ReceitaView";
+import ReceitaViewC from "../views/ReceitaView";
+import ColecsViewC from "../views/ColecsView";
+import ColecViewC from "../views/ColecView";
+
 import Provider from "react-redux/es/components/Provider";
 import {connect} from 'react-redux';
 import HomeList from './components/HomeList';
-import ColecList from './components/ColecList';
 import store from "./store/store";
-import RecipeDetail from "./components/RecipeDetail";
-import ColecDetail from "./components/ColecDetail";
 import CartView from "../views/CartView";
 
 
@@ -32,11 +32,11 @@ class App extends Component {
                 <div>
                     <Switch>
                         <Route exact path='/login' component={LoginView}/>
-                        <Route exact path='/lel' component={HomeList}/>
+                        <Route exact path='/' component={HomeList}/>
                         <Route exact path='/cart' component={CartView}/>
-                        <Route exact path='/receita/:id' component={ReceitaView}/>
-                        <Route path="/recipe/:id" component={RecipeDetail} />
-                        <Route path="/coleccion/:id" component={ColecDetail} />
+                        <Route exact path='/receita/:id' component={ReceitaViewC}/>
+                        <Route path="/coleccao/:id" component={ColecViewC} />
+                        <Route path="/coleccao" component={ColecsViewC}/>
                     </Switch>
 
                     <LoginFooter store={store}/>

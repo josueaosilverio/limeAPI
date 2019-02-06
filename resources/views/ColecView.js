@@ -1,14 +1,14 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {fetchColec, coleccaoCarrinho, deleteColeccao} from "../actions/actions";
+import {fetchColec, carrinhoAdd, coleccaoDelete} from "../js/actions/actions";
 import {Link} from "react-router-dom";
 import axios from "axios";
 
 const mapDispatchToProps = dispatch => {
     return{
         fetchColec: () => dispatch(fetchColec()),
-        coleccaoCarrinho: (payload) => dispatch(coleccaoCarrinho(payload)),
-        deleteColeccao: (payload) => dispatch(deleteColeccao(payload))
+        carrinhoAdd: (payload) => dispatch(carrinhoAdd(payload)),
+        coleccaoDelete: (payload) => dispatch(coleccaoDelete(payload))
     }
 };
 
@@ -16,7 +16,7 @@ const mapStateToProps = state => {
     return {colecs: state.colecListReducer, colecsCarrinho: state.coleccaoCarrinhoReducer}
 };
 
-class colecDetail extends Component{
+class ColecView extends Component{
     constructor(match){
         super(match);
     }
@@ -43,8 +43,8 @@ class colecDetail extends Component{
                     <p> {colec.id} </p>
                     <p> {colec.name} </p>
                     <Link to={'/lel'}> <button className="btn btn-primary btn-lg"> Back</button> </Link>
-                    <button className="btn btn-primary btn-lg" onClick={()=>{coleccaoCarrinho(colec) }}> add2carrinho </button>
-                    <button className="btn btn-primary btn-lg" onClick={()=>{deleteColeccao(colec) }}> delete4ever </button>
+                    <button className="btn btn-primary btn-lg" onClick={()=>{carrinhoAdd(colec) }}> add2carrinho </button>
+                    <button className="btn btn-primary btn-lg" onClick={()=>{coleccaoDelete(colec) }}> delete4ever </button>
                 </div>
 
             );
@@ -58,6 +58,6 @@ class colecDetail extends Component{
     }
 }
 
-const ColecDetail = connect(mapStateToProps, mapDispatchToProps)(colecDetail);
+const ColecViewC = connect(mapStateToProps, mapDispatchToProps)(ColecView);
 
-export default ColecDetail;
+export default ColecViewC;

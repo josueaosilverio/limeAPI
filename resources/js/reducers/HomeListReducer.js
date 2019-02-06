@@ -2,7 +2,7 @@ import {FETCH_RECIPES} from "../actions/constants";
 
 const initialState = [];
 
-const homeListReducer = (state = initialState, action) => {
+const HomeListReducer = (state = initialState, action) => {
     switch(action.type){
         case FETCH_RECIPES:
             //fetch das recipes
@@ -19,4 +19,4 @@ const homeListReducer = (state = initialState, action) => {
             return state;
     }
 };
-export default homeListReducer;
+export default HomeListReducer;

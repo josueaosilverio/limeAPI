@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {fetchRecipes, carrinho, coleccaoDelete} from "../actions/actions";
+import {fetchRecipes, carrinhoAdd, coleccaoDelete} from "../actions/actions";
 import {Link} from "react-router-dom";
 import axios from "axios";
 
@@ -9,13 +9,13 @@ let recipe;
 const mapDispatchToProps = dispatch => {
     return{
         fetchRecipes: (payload) => dispatch(fetchRecipes(payload)),
-        carrinho: (payload) => dispatch(carrinho(payload)),
+        carrinhoAdd: (payload) => dispatch(carrinhoAdd(payload)),
         coleccaoDelete: (payload) =>dispatch(coleccaoDelete(payload))
     }
 };
 
 const mapStateToProps = state => {
-    return {recipes: state.homeListReducer, receitasCarrinho: state.receitaCarrinhoReducer}
+    return {recipes: state.homeListReducer, carrinho: state.carrinhoReducer}
 };
 
 class recipeDetail extends Component{
@@ -51,7 +51,7 @@ class recipeDetail extends Component{
                     <p> {recipe.name}
                         {recipe.description}
                     </p>
-                    <button className="btn btn-primary btn-lg" onClick={()=>{this.props.carrinho(recipe);}}> Adiciona à colecção</button>
+                    <button className="btn btn-primary btn-lg" onClick={()=>{this.props.carrinhoAdd(recipe);}}> Adiciona à colecção</button>
                     <button className="btn btn-primary btn-lg" onClick={()=>{this.props.coleccaoDelete(recipe);}}> DeleteMe4Ever</button>
                     <Link to={'/lel'}> <button className="btn btn-primary btn-lg"> Back</button> </Link>
                 </div>

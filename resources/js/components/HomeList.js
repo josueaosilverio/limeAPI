@@ -59,7 +59,7 @@ class homeList extends Component {
 
                         <div key={index}>
                             <p> {el.id}</p>
-                            <Link to={`/recipe/${el.id}`}>  <p> {el.name}  </p>  </Link>
+                            <Link to={`/receita/${el.id}`}>  <p> {el.name}  </p>  </Link>
                         </div>
                     )
                 )}
