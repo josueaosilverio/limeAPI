@@ -1,70 +1,60 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {fetchRecipes} from "../actions/actions";
-import {FETCH_RECIPES} from "../actions/constants";
 import {Link} from "react-router-dom";
 import axios from "axios";
 
 
 const mapDispatchToProps = dispatch => {
-    return{
+    return {
         fetchRecipes: (payload) => dispatch(fetchRecipes(payload))
     }
 };
 
 const mapStateToProps = state => {
-    return {homeList: state.homeListReducer};
+    return {homeList: state.HomeListReducer};
 };
 
 
 class homeList extends Component {
-    constructor(){
+    constructor() {
         super();
 
         //this.clickAction = this.clickAction.bind(this);
     }
 
-    componentDidMount(){
-        console.log("componentWillMount");
+    componentDidMount() {
 
-        if(this.props.homeList.length < 1) {
-            axios.get("/api/recipe").then(response => {
-                this.props.fetchRecipes(response.data.data);
+        axios.get("/api/recipe").then(response => {
+            this.props.fetchRecipes(response.data.data);
 
-            }).catch(error => {
-                console.log(error);
-            })
-            ;
+        }).catch(error => {
+            console.log(error);
+        })
+        ;
 
 
-        }
     }
 
 
-
-    render(){
+    render() {
         console.log(this.props.homeList);
 
-        let recipes;
-        if(this.props.homeList.length > 0){
-            recipes = this.props.homeList;
-        }else{
-            recipes = [];
-        }
+        let recipes = this.props.homeList;
         console.log("isto são as receitas");
         console.log(recipes);
-        return(
+        return (
             <div>
-                {recipes.map((el, index) => (
+                {
+                    (recipes != null) ? recipes.map((el, index) => (
 
-                        <div key={index}>
-                            <p> {el.id}</p>
-                            <Link to={`/receita/${el.id}`}>  <p> {el.name}  </p>  </Link>
-                        </div>
-                    )
-                )}
+                            <div key={index}>
+                                <p> {el.id}</p>
+                                <Link to={`/receita/${el.id}`}><p> {el.name}  </p></Link>
+                            </div>
+                        )
+                    ) : ":'("}
             </div>
-
 
 
         )
@@ -74,6 +64,6 @@ class homeList extends Component {
 /*
             }*/
 
-const HomeList = connect (mapStateToProps, mapDispatchToProps)(homeList);
+const HomeList = connect(mapStateToProps, mapDispatchToProps)(homeList);
 
 export default HomeList;

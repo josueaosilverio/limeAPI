@@ -11,7 +11,7 @@ class CartView extends Component {
     render() {
         return (
             <div>
-                <CartC cart={this.state.cart}/>
+                <CartC/>
             </div>
         )
     }

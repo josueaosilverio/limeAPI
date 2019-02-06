@@ -16,18 +16,17 @@ const mapDispatchToProps = dispatch => {
 };
 
 const mapStateToProps = state => {
-    return {recipes: state.homeListReducer, carrinho: state.CarrinhoReducer}
+    return {recipes: state.HomeListReducer, carrinho: state.CarrinhoReducer}
 };
 
 class ReceitaView extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {recipe: ""};
     }
 
     componentDidMount() {
-        if(this.props.recipes.length === 0){
+        if(!this.props.recipes){
             console.log("if começa aqui");
             axios.get("/api/recipe").then(response => {
                 console.log("this is the response data");

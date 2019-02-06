@@ -15,7 +15,7 @@ const mapDispatchToProps = dispatch => {
 };
 
 const mapStateToProps = state => {
-    return {colecs: state.colecListReducer};
+    return {colecs: state.ColecListReducer};
 };
 
 
