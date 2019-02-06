@@ -36,7 +36,7 @@ const Footer = () => (
             <Link className="nav-item" to='/'><MenuItem><i className="fas fa-home"></i></MenuItem></Link>
             <Link className="nav-item" to='/login'><MenuItem><i className="fas fa-book"></i></MenuItem></Link>
             <Link className="nav-item" to='/receita/1'><MenuItem><i className="fas fa-shopping-cart"></i></MenuItem></Link>
-            <Link className="nav-item" to='/'><MenuItem><i className="fas fa-cog"></i></MenuItem></Link>
+            <Link className="nav-item" to='/lel'><MenuItem><i className="fas fa-cog"></i></MenuItem></Link>
         </div>
     </FooterDiv>
 );
