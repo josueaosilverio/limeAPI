@@ -24,43 +24,53 @@ const LoginFooter = () => {
     return null;
 };
 
-const LoginCheck = () => {
-    let returndata = null;
-    axios.get("api/user/getauth").then(response => {
-        if (response.data.data === false) {
-            return <Redirect to="/coleccao"/>;
-        } else {
-            if (window.location.pathname === "/")
-                return <Redirect to="/home"/>;
-            else
-                return null;
-        }
-    }).catch(error => {
-        console.log(error);
-    });
-    console.log("returndata" + returndata);
-    return returndata;
-};
-
 
 class App extends Component {
 
+    loginCheck() {
+        let returndata = null;
+        axios.get("api/user/getauth").then(response => {
+            if (response.data.data === false) {
+                returndata = false;
+            } else {
+                returndata = window.location.pathname === "/";
+            }
+        }).catch(error => {
+            console.log(error);
+        });
+        return returndata;
+    };
+
+
     render() {
+
+        //TODO retirar o not para a verificação do login!!!!
+        if (!this.loginCheck && window.location.pathname !== "/") {
+            return (
+                <BrowserRouter>
+                    <Switch>
+                        <Redirect from={window.location.pathname} to="/"/>
+                        {this.forceUpdate()}
+                    </Switch>
+                </BrowserRouter>
+            )
+        }
+
         return (
             <Provider store={store}>
                 <BrowserRouter>
                     <div>
-                        <LoginCheck/>
                         <Switch>
-                            <Route exact path='/home' component={HomeList}/>
-                            <Route exact path='/' component={LoginView}/>
-                            <Route exact path='/cart' component={CartView}/>
-                            <Route exact path='/receita/:id' component={ReceitaViewC}/>
+                            <Route path='/home' component={HomeList}/>
+                            <Route exact={true} path='/' component={LoginView}/>
+                            <Route path='/cart' component={CartView}/>
+                            <Route path='/receita/:id' component={ReceitaViewC}/>
                             <Route path="/coleccao/:id" component={ColecViewC}/>
                             <Route path="/coleccao" component={ColecsViewC}/>
                         </Switch>
 
                         <LoginFooter store={store}/>
+
                     </div>
 
                 </BrowserRouter>
