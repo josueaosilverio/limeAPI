@@ -6,10 +6,9 @@ const CarrinhoReducer = (state = initialState, action) => {
     switch(action.type) {
         case CARRINHO_ADD:
 
-                console.log("Array",action.payload.receitas);
+
                 let recipesFiltered = action.payload.receitas[action.payload.index];
-            console.log("recipesFiltered",recipesFiltered);
-            console.log(state);
+
                 return [...state, recipesFiltered];
 
         case CARRINHO_DELETE:
@@ -25,12 +24,11 @@ const CarrinhoReducer = (state = initialState, action) => {
             const ingreFiltered = state[posArray].items.filter((x) => x!== action.payload[0].item);
             let stateMock = [...state];
             stateMock[posArray].items = ingreFiltered;
-            console.log("stateMock",stateMock);
+
             return [...stateMock];
         }
         default:
-            console.log("entrou no reducer 123");
-            console.log(action.type);
+
             return state;
     }
 };

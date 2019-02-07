@@ -66,11 +66,7 @@ class LoginController extends Controller
     {
         $socialUser = Socialite::driver($provider)->user();
 
-
-        $user = User::where('provider', $provider)->where('provider_id', $socialUser->getId())->first();
-        // $user->token;
-
-        $user = User::where('provider', $provider)->where('provider_id', $socialUser->getId())->first();
+        $user = User::where('email', $socialUser->getEmail())->first();
         // $user->token;
         $parts = explode("@", $socialUser->getEmail());
         $username = $parts[0];

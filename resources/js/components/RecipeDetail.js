@@ -26,12 +26,8 @@ class recipeDetail extends Component{
 
 
     componentWillMount(){
-        console.log(this.props.recipes);
         if(this.props.recipes.length === 0){
-            console.log("if começa aqui");
             axios.get("/api/recipe").then(response => {
-                console.log("this is the response data");
-                console.log(response.data.data);
                 this.props.fetchRecipes(response.data.data);
             }).catch(error => {
                 console.log(error);

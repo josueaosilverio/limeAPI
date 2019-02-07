@@ -48,12 +48,9 @@ const PriceDiv = styled.div`
   color: #2ECC71;
   background-color: #fff;
   
-    
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
 `;
 
 const RecipeTitle = styled.div`

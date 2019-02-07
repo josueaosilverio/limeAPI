@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -130,5 +131,34 @@ class UserController extends Controller
         ];
         return response($message, 200)
             ->header('Content-Type', "text/plain; charset=utf-8");
+
+
     }
+
+    /**
+     * Gets Auth user
+     * @group Auth
+
+     * @return \Illuminate\Http\Response
+     */
+    public function getAuth()
+    {
+
+        if (Auth::check()){
+            $result = Auth::user();
+        } else {
+            $result = false;
+        }
+
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
+    }
+
+
 }

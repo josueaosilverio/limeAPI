@@ -1,12 +1,13 @@
 import React, {Component} from "react";
-import {connect} from "react-redux";
-import {fetchColec, carrinhoAdd, coleccaoDelete, receitaDelete} from "../js/actions/actions";
-import {Link} from "react-router-dom";
+import {carrinhoAdd, coleccaoDelete, fetchColec, receitaDelete} from "../js/actions/actions";
 import axios from "axios";
-import store from "../js/store/store";
+import styled from "styled-components";
+import Row from "react-bootstrap/Row";
+import connect from "react-redux/es/connect/connect";
+import Link from "react-router-dom/es/Link";
 
 const mapDispatchToProps = dispatch => {
-    return{
+    return {
         fetchColec: () => dispatch(fetchColec()),
         carrinhoAdd: (payload) => dispatch(carrinhoAdd(payload)),
         coleccaoDelete: (payload) => dispatch(coleccaoDelete(payload)),
@@ -18,14 +19,48 @@ const mapStateToProps = state => {
     return {colecs: state.ColecListReducer}
 };
 
-class ColecView extends Component{
-    constructor(match){
+
+
+const NothingContainer = styled.div`
+  background: #ECF2F7;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  color: #2ECC71;
+  font-weight: bold;
+  text-align: center;
+  
+  &>div{
+  display: block;
+  }    
+`;
+
+const Mosaic = styled.div`
+width: 50vw;
+height: 50vw;
+background: url(${props => props.bg}) 50%;
+`;
+
+
+const StyledRow = styled(Row)`
+  margin: 0;
+`;
+
+
+
+class ColecView extends Component {
+    constructor(match) {
         super(match);
     }
 
-    componentWillMount(){
-        console.log(this.props.colecs);
-        if(this.props.colecs.length === 0) {
+    componentWillMount() {
+        if (this.props.colecs.length === 0) {
             axios.get("/api/collection").then(response => {
                 this.props.fetchColec({type: 'FETCH_COLEC', payload: response.data.data});
 
@@ -37,23 +72,22 @@ class ColecView extends Component{
 
 
     render() {
-        console.log(store.getState());
-        console.log("12312412312");
-        console.log(this.props.colecs);
         let colec = this.props.colecs.find(colecsmap => colecsmap.id.toString() === this.props.match.params.id);
         let receitas = [];
-        if(colec) {
-            if(colec.recipes.length > 0) {
+        if (colec) {
+            if (colec.recipes.length > 0) {
                 colec.recipes.map((el, index) => {
-                    receitas.push(<div key={index}>
-                        <p key={index}> {el.name} </p>
-                        <button className="btn btn-primary btn-lg" onClick={() => {
-                        this.props.receitaDelete([{receita:el, coleccao:colec}])
-                        }}>DeleteRecipe</button>
-                        <button className="btn btn-primary btn-lg" onClick={() => {
-                            this.props.carrinhoAdd({receitas:colec.recipes, index: index});
-                        }}>Add2Carrinho</button>
-                    </div>);
+                    receitas.push(
+                        <div>
+                            <Link to={`/receita/${el.id}`} key={index}> <Mosaic
+                                bg={el.image}><i className="fas fa-trash-alt" onClick={() => {
+                                this.props.receitaDelete([{receita: el, coleccao: colec}])
+                            }}></i>
+                                <i className="fas fa-cart-plus" onClick={() => {
+                                    this.props.carrinhoAdd({receitas: colec.recipes, index: index});
+                                }}></i></Mosaic></Link>
+
+                        </div>);
 
 
                 });
@@ -61,21 +95,20 @@ class ColecView extends Component{
 
             return (
                 <div>
-                    <p> {colec.id} </p>
-                    <p> {colec.name} </p>
-                    {receitas}
-                    <Link to={'/coleccao'}> <button className="btn btn-primary btn-lg"> Back</button> </Link>
-                    <button className="btn btn-primary btn-lg" onClick={()=>{carrinhoAdd(colec) }}> add2carrinho </button>
-                    <Link to={'/coleccao'}> <button className="btn btn-primary btn-lg" onClick={()=>{this.props.coleccaoDelete(colec) }}> delete4ever </button></Link>
-
+                    <NothingContainer>
+                        {receitas}
+                    </NothingContainer>
                 </div>
 
             );
-        }else{
+        } else {
             return (
-                <div>
-                    Volta para casa amigo, essa colecção nem existe, seu poser de coleccionador!!
-                </div>
+                <StyledRow>
+                    <div><img src="img/draw/chef.svg" style={{width: "80vw"}} alt=""/></div>
+                    <br/>
+                    <br/>
+                    <div><h3>A cozinhar as suas receitas!</h3></div>
+                </StyledRow>
             )
         }
     }

@@ -12,6 +12,9 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('user/getauth', 'UserController@getAuth');
+Route::post('collection/{collection}/addrecipes', 'CollectionController@addRecipe');
+
 Route::resource('user', 'UserController');
 Route::resource('collectioncategory', 'CollectionCategoryController');
 Route::resource('collection', 'CollectionController');
@@ -20,3 +23,4 @@ Route::resource('item', 'ItemController');
 Route::resource('recipecategory', 'RecipeCategoryController');
 Route::resource('recipe', 'RecipeController');
 Route::resource('userrole', 'UserRoleController');
+
