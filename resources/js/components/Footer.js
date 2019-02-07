@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import styled from 'styled-components';
 
 const FooterDiv = styled.div`
@@ -25,18 +25,29 @@ const FooterDiv = styled.div`
 const MenuItem = styled.div`
     width: 23vw;
     text-decoration: none;
-    color: #666;
     text-align: center;
     font-size: 1.5em;
+    
+`;
+
+const StyledLink = styled(NavLink)`
+color: #666;
+
+&.active{
+color: #2ECC71 !important;
+}
 `;
 
 const Footer = () => (
     <FooterDiv>
         <div className='container nav'>
-            <Link className="nav-item" to='/'><MenuItem><i className="fas fa-home"></i></MenuItem></Link>
-            <Link className="nav-item" to='/coleccao'><MenuItem><i className="fas fa-book"></i></MenuItem></Link>
-            <Link className="nav-item" to='/cart'><MenuItem><i className="fas fa-shopping-cart"></i></MenuItem></Link>
-            <Link className="nav-item" to='/lel'><MenuItem><i className="fas fa-cog"></i></MenuItem></Link>
+            <StyledLink className="nav-item" activeClassName="active" to='/home'><MenuItem><i
+                className="fas fa-home"></i></MenuItem></StyledLink>
+            <StyledLink className="nav-item" activeClassName="active" to='/coleccao'><MenuItem><i
+                className="fas fa-book"></i></MenuItem></StyledLink>
+            <StyledLink className="nav-item" activeClassName="active" to='/cart'><MenuItem><i
+                className="fas fa-shopping-cart"></i></MenuItem></StyledLink>
+            <StyledLink className="nav-item" activeClassName="active" to='/lel'><MenuItem><i className="fas fa-cog"></i></MenuItem></StyledLink>
         </div>
     </FooterDiv>
 );

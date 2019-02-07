@@ -28,21 +28,21 @@ class App extends Component {
     render() {
         return (
             <Provider store={store}>
-            <BrowserRouter>
-                <div>
-                    <Switch>
-                        <Route exact path='/login' component={LoginView}/>
-                        <Route exact path='/' component={HomeList}/>
-                        <Route exact path='/cart' component={CartView}/>
-                        <Route exact path='/receita/:id' component={ReceitaViewC}/>
-                        <Route path="/coleccao/:id" component={ColecViewC} />
-                        <Route path="/coleccao" component={ColecsViewC}/>
-                    </Switch>
+                <BrowserRouter>
+                    <div>
+                        <Switch>
+                            <Route exact path='/home' component={HomeList}/>
+                            <Route exact path='/login' component={LoginView}/>
+                            <Route exact path='/cart' component={CartView}/>
+                            <Route exact path='/receita/:id' component={ReceitaViewC}/>
+                            <Route path="/coleccao/:id" component={ColecViewC}/>
+                            <Route path="/coleccao" component={ColecsViewC}/>
+                        </Switch>
 
-                    <LoginFooter store={store}/>
-                </div>
+                        <LoginFooter store={store}/>
+                    </div>
 
-            </BrowserRouter>
+                </BrowserRouter>
 
             </Provider>
         )
