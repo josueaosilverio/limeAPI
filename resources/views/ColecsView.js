@@ -1,16 +1,14 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {fetchColec} from "../js/actions/actions";
+import {fetchColec, coleccaoCreate} from "../js/actions/actions";
 import {FETCH_COLEC} from "../js/actions/constants";
 import {Link} from "react-router-dom";
 import axios from "axios";
 
-
-let colecs;
-
 const mapDispatchToProps = dispatch => {
     return {
-        fetchColec: () => dispatch(fetchColec())
+        fetchColec: (payload) => dispatch(fetchColec(payload)),
+        coleccaoCreate: (payload) => dispatch(coleccaoCreate(payload))
     }
 };
 
@@ -26,11 +24,11 @@ class ColecsView extends Component {
         //this.clickAction = this.clickAction.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
 
-        if (this.props.colecs.length < 1) {
+        if (this.props.colecs.length === 0) {
             axios.get("/api/collection").then(response => {
-                this.props.fetchColec({type: 'FETCH_COLEC', payload: response.data.data});
+                this.props.fetchColec(response.data.data);
 
             }).catch(error => {
                 console.log(error);
@@ -40,41 +38,34 @@ class ColecsView extends Component {
 
 
     render() {
-        console.log(this.props.colec);
 
-        if (this.props.colecs.length > 0) {
-            colecs = this.props.colecs;
-        } else {
-            colecs = [];
-        }
+
+        let colecs = this.props.colecs;
+
         console.log("isto são as colecs");
-        console.log(colecs);
+        console.log("here",colecs[0]);
+        console.log("there", colecs);
+        console.log(this.props.colecs);
 
+        return (
 
-        if (colecs) {
+            <div>
+                {
+                    (colecs != null) ? colecs.map((el, index) => (
 
-            return (
-
-                <div>
-                    {colecs.map((el, index) => (
 
                             <div key={index}>
                                 <p> {el.id}</p>
                                 <Link to={`/coleccao/${el.id}`}><p> {el.name}  </p></Link>
+
                             </div>
                         )
-                    )}
-                </div>
+                    ) : "cócó"
+                }
+                <button className="btn btn-primary btn-lg" onClick={()=> {this.props.coleccaoCreate([{id:10, name: "aoskeokas"}])}} > adiciona aí oh mano</button>
+            </div>
 
-            )
-        } else {
-            return (
-                <div>
-                    cenas //TODO adicionar graf de nao ha *shrug*
-                </div>
-
-            )
-        }
+        )
 
 
     }

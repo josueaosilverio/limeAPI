@@ -24,16 +24,15 @@ class homeList extends Component {
     }
 
     componentDidMount() {
+        if (this.props.homeList.length === 0) {
+            axios.get("/api/recipe").then(response => {
+                this.props.fetchRecipes(response.data.data);
 
-        axios.get("/api/recipe").then(response => {
-            this.props.fetchRecipes(response.data.data);
+            }).catch(error => {
+                console.log(error);
+            })
 
-        }).catch(error => {
-            console.log(error);
-        })
-        ;
-
-
+        }
     }
 
 

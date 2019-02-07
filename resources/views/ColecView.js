@@ -1,19 +1,21 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {fetchColec, carrinhoAdd, coleccaoDelete} from "../js/actions/actions";
+import {fetchColec, carrinhoAdd, coleccaoDelete, receitaDelete} from "../js/actions/actions";
 import {Link} from "react-router-dom";
 import axios from "axios";
+import store from "../js/store/store";
 
 const mapDispatchToProps = dispatch => {
     return{
         fetchColec: () => dispatch(fetchColec()),
         carrinhoAdd: (payload) => dispatch(carrinhoAdd(payload)),
-        coleccaoDelete: (payload) => dispatch(coleccaoDelete(payload))
+        coleccaoDelete: (payload) => dispatch(coleccaoDelete(payload)),
+        receitaDelete: (payload) => dispatch(receitaDelete(payload))
     }
 };
 
 const mapStateToProps = state => {
-    return {colecs: state.colecListReducer, colecsCarrinho: state.coleccaoCarrinhoReducer}
+    return {colecs: state.ColecListReducer}
 };
 
 class ColecView extends Component{
@@ -33,18 +35,39 @@ class ColecView extends Component{
         }
     }
 
+
     render() {
-
+        console.log(store.getState());
+        console.log("12312412312");
+        console.log(this.props.colecs);
         let colec = this.props.colecs.find(colecsmap => colecsmap.id.toString() === this.props.match.params.id);
-
+        let receitas = [];
         if(colec) {
+            if(colec.recipes.length > 0) {
+                colec.recipes.map((el, index) => {
+                    receitas.push(<div key={index}>
+                        <p key={index}> {el.name} </p>
+                        <button className="btn btn-primary btn-lg" onClick={() => {
+                        this.props.receitaDelete([{receita:el, coleccao:colec}])
+                        }}>DeleteRecipe</button>
+                        <button className="btn btn-primary btn-lg" onClick={() => {
+                            this.props.carrinhoAdd({receitas:colec.recipes, index: index});
+                        }}>Add2Carrinho</button>
+                    </div>);
+
+
+                });
+            }
+
             return (
                 <div>
                     <p> {colec.id} </p>
                     <p> {colec.name} </p>
-                    <Link to={'/lel'}> <button className="btn btn-primary btn-lg"> Back</button> </Link>
+                    {receitas}
+                    <Link to={'/coleccao'}> <button className="btn btn-primary btn-lg"> Back</button> </Link>
                     <button className="btn btn-primary btn-lg" onClick={()=>{carrinhoAdd(colec) }}> add2carrinho </button>
-                    <button className="btn btn-primary btn-lg" onClick={()=>{coleccaoDelete(colec) }}> delete4ever </button>
+                    <Link to={'/coleccao'}> <button className="btn btn-primary btn-lg" onClick={()=>{this.props.coleccaoDelete(colec) }}> delete4ever </button></Link>
+
                 </div>
 
             );
@@ -57,6 +80,7 @@ class ColecView extends Component{
         }
     }
 }
+
 
 const ColecViewC = connect(mapStateToProps, mapDispatchToProps)(ColecView);
 

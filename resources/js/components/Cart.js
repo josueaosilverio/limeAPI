@@ -7,7 +7,10 @@ import Nav from "react-bootstrap/Nav";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import {connect} from "react-redux";
-import {carrinhoDelete} from "../actions/actions";
+import {carrinhoDelete, carrinhoIngreDelete, carrinhoReceitaDelete} from "../actions/actions";
+import axios from "axios";
+
+let receita;
 
 const Container = styled.div`
   background: #ECF2F7;
@@ -79,12 +82,18 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return{
-        carrinhoDelete: (payload) => dispatch(carrinhoDelete(payload)),
+        carrinhoDelete: () => dispatch(carrinhoDelete()),
+        carrinhoReceitaDelete: (payload) => dispatch(carrinhoReceitaDelete(payload)),
+        carrinhoIngreDelete: (payload) => dispatch(carrinhoIngreDelete(payload))
     }
 };
 class Cart extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
+    }
+
+    componentDidMount() {
+
     }
 
 //todo ver cenas receita e ingred
@@ -109,17 +118,22 @@ class Cart extends Component {
                             <Col sm={9}>
                                 <Tab.Content>
                                     <Tab.Pane eventKey="recipe">
-                                        <Card body>{this.props.description}</Card>
+                                        <Card body>{this.props.carrinho.recipes}</Card>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="items">
                                         <Card>
                                             <ListGroup variant="flush">
                                                 {
-                                                    (this.props.carrinho != null) ? this.props.carrinho.map((el, index) => (
-                                                        <ListGroup.Item key={index}> <i className="fas fa-check"></i> {el.name} <button onClick={this.props.carrinhoDelete(el.id)}>delete</button></ListGroup.Item>
-                                                    )) : <ListGroup.Item>PlaceHolder</ListGroup.Item>
 
-                                                }
+                                                    (this.props.carrinho.recipes != null) ? this.props.carrinho.recipes.map((el, index) => (
+                                                        el.items.map((el, index) => (
+                                                    <ListGroup.Item key={index}> <i className="fas fa-check"></i> {el.name}  <button onClick={this.props.carrinhoIngreDelete({item:el, receita:el.parent.name})}>delete</button></ListGroup.Item>
+                                                        ))
+
+                                                    )) : <ListGroup.Item>PlaceHolder</ListGroup.Item>}
+                                                {<button onClick={this.props.carrinhoDelete()}>delete</button>}
+
+
                                             </ListGroup>
                                         </Card>
                                     </Tab.Pane>

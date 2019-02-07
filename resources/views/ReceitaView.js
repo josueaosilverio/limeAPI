@@ -11,12 +11,13 @@ const mapDispatchToProps = dispatch => {
     return{
         fetchRecipes: (payload) => dispatch(fetchRecipes(payload)),
         carrinhoAdd: (payload) => dispatch(carrinhoAdd(payload)),
-        coleccaoDelete: (payload) =>dispatch(coleccaoDelete(payload))
+        coleccaoDelete: (payload) =>dispatch(coleccaoDelete(payload)),
+        receitaAdd: (payload) => dispatch(receitaAdd(payload))
     }
 };
 
 const mapStateToProps = state => {
-    return {recipes: state.HomeListReducer, carrinho: state.CarrinhoReducer}
+    return {recipes: state.HomeListReducer, carrinho: state.CarrinhoReducer, colecs: state.ColecListReducer }
 };
 
 class ReceitaView extends Component {
@@ -37,6 +38,14 @@ class ReceitaView extends Component {
             })
             ;
         }
+        if(!this.props.colecs){
+            axios.get("/api/collection").then(response => {
+                this.props.fetchColec({type: 'FETCH_COLEC', payload: response.data.data});
+
+            }).catch(error => {
+                console.log(error);
+            })
+        }
     }
 
     render() {
@@ -48,6 +57,8 @@ class ReceitaView extends Component {
             <div>
                 <ReceitaHeader recipe={recipe}/>
                 <ReceitaBody items={recipe.items} description={recipe.description}/>
+                <button className="btn btn-primary btn-lg" onClick={() => {this.props.receitaAdd([{receita: recipe, coleccao: this.props.colecs[0][1]}])}}> add2coleccion </button>
+                <button className="btn btn-primary btn-lg" onClick={()=> {this.props.receitaAdd([{receitas: [recipe], index: 0 }])}}> add2carrinho </button>
             </div>
 
         )}else{

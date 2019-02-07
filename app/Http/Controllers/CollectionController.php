@@ -20,7 +20,7 @@ class CollectionController extends Controller
      */
     public function index()
     {
-        $result = Collection::all();
+        $result = Collection::with("recipes")->get();
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',
@@ -69,7 +69,7 @@ class CollectionController extends Controller
      */
     public function show(Collection $collection)
     {
-        $result = $collection;
+        $result = Collection::with("recipes")->find($collection->id);
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',

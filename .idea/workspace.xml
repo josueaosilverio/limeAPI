@@ -2,26 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0662c2b-70f2-4c52-8579-3759a20997cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/draw/cart.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Recipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Recipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CollectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CollectionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/actions/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ColecDetail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ColecList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/HomeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/HomeList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/RecipeDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/RecipeDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/reducers/CarrinhoReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/reducers/CarrinhoReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/reducers/ReceitaCarrinhoReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/reducers/carrinhoReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/CartView.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/CartView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ColecView.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ColecView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ColecsView.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ColecsView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ReceitaView.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ReceitaView.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,108 +43,14 @@
     <favorites_list name="api-ssj2" />
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Footer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/CartView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Cart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="103" column="75" selection-start-line="103" selection-start-column="75" selection-end-line="103" selection-end-column="75" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-=======
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="419">
-                  <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/views/CartView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/resources/js/components/Cart.js">
+            <entry file="file://$PROJECT_DIR$/resources/js/reducers/CarrinhoReducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="74" column="2" lean-forward="true" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/js/actions/actions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/views/ColecView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="70" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="70" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+                <state relative-caret-position="375">
+                  <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -160,8 +58,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+                <state relative-caret-position="-900">
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -170,10 +67,25 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/js/reducers/CarrinhoReducer.js">
+            <entry file="file://$PROJECT_DIR$/resources/views/ColecView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+                <state relative-caret-position="353">
+                  <caret line="60" selection-start-line="60" selection-end-line="60" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/ColecsView.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-186">
+                  <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -183,9 +95,19 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
+            <entry file="file://$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
+                <state relative-caret-position="555">
+                  <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/resources/js/components/Cart.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="320">
+                  <caret line="134" selection-start-line="134" selection-end-line="134" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -193,23 +115,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/views/ReceitaView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="485">
-                  <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="359">
-                  <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+                <state relative-caret-position="288">
+                  <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -220,7 +130,6 @@
         </leaf>
       </split-second>
     </splitter>
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -233,14 +142,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Laravel</find>
-<<<<<<< HEAD
-      <find>margin</find>
-      <find>yallist</find>
-=======
       <find>getState</find>
       <find>head</find>
       <find>===</find>
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
+      <find>recipes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -249,10 +154,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ItemCategoryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CollectionCategoryController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CollectionController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecipeController.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
@@ -282,24 +184,27 @@
         <option value="$PROJECT_DIR$/resources/js/reducers/ReceitaCarrinhoReducer.js" />
         <option value="$PROJECT_DIR$/resources/js/reducers/ColeccaoCarrinhoReducer.js" />
         <option value="$PROJECT_DIR$/resources/js/reducers/carrinhoReducer.js" />
-        <option value="$PROJECT_DIR$/resources/js/actions/constants.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/resources/js/components/ColecDetail.js" />
-        <option value="$PROJECT_DIR$/resources/js/actions/actions.js" />
         <option value="$PROJECT_DIR$/resources/js/components/RecipeDetail.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/HomeList.js" />
         <option value="$PROJECT_DIR$/resources/js/components/ColecView.js" />
-        <option value="$PROJECT_DIR$/resources/views/ColecView.js" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Footer.js" />
-        <option value="$PROJECT_DIR$/resources/views/ColecsView.js" />
-        <option value="$PROJECT_DIR$/resources/js/reducers/CarrinhoReducer.js" />
-        <option value="$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js" />
         <option value="$PROJECT_DIR$/resources/js/reducers/rootReducer.js" />
-        <option value="$PROJECT_DIR$/resources/views/ReceitaView.js" />
         <option value="$PROJECT_DIR$/resources/views/CartView.js" />
+        <option value="$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js" />
+        <option value="$PROJECT_DIR$/resources/views/HomeView.js" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/HomeList.js" />
         <option value="$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js" />
+        <option value="$PROJECT_DIR$/resources/views/ColecsView.js" />
+        <option value="$PROJECT_DIR$/resources/js/actions/constants.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CollectionController.php" />
+        <option value="$PROJECT_DIR$/app/Collection.php" />
+        <option value="$PROJECT_DIR$/resources/js/actions/actions.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Cart.js" />
+        <option value="$PROJECT_DIR$/resources/views/ColecView.js" />
+        <option value="$PROJECT_DIR$/resources/js/reducers/CarrinhoReducer.js" />
+        <option value="$PROJECT_DIR$/resources/views/ReceitaView.js" />
       </list>
     </option>
   </component>
@@ -406,20 +311,13 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="190" />
-    <option name="y" value="27" />
-    <option name="width" value="1315" />
-    <option name="height" value="555" />
-=======
-    <option name="x" value="986" />
+    <option name="x" value="53" />
     <option name="y" value="25" />
     <option name="width" value="934" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -435,26 +333,9 @@
               <item name="api-ssj2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-<<<<<<< HEAD
-              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="limeapi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="limeapi" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="limeapi" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="api-ssj2" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-ssj2" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
             </path>
             <path>
               <item name="api-ssj2" type="b2602c69:ProjectViewProjectNode" />
@@ -484,20 +365,17 @@
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-<<<<<<< HEAD
-              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="limeapi" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="api-ssj2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-ssj2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="limeapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-=======
               <item name="api-ssj2" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-ssj2" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
             </path>
           </expand>
           <select />
@@ -584,17 +462,6 @@
       <workItem from="1548948026274" duration="3183000" />
       <workItem from="1549033035220" duration="646000" />
       <workItem from="1549037244702" duration="10234000" />
-<<<<<<< HEAD
-      <workItem from="1549119766846" duration="8765000" />
-      <workItem from="1549202514734" duration="11161000" />
-      <workItem from="1549226476420" duration="2948000" />
-      <workItem from="1549229987183" duration="64000" />
-      <workItem from="1549230318962" duration="121000" />
-      <workItem from="1549283938502" duration="6035000" />
-      <workItem from="1549291416352" duration="18726000" />
-      <workItem from="1549363926593" duration="22254000" />
-      <workItem from="1549466229356" duration="3922000" />
-=======
       <workItem from="1549119766846" duration="8703000" />
       <workItem from="1549222147176" duration="3062000" />
       <workItem from="1549226405861" duration="4976000" />
@@ -605,25 +472,13 @@
       <workItem from="1549325860473" duration="5826000" />
       <workItem from="1549379496748" duration="14161000" />
       <workItem from="1549405903952" duration="6075000" />
-<<<<<<< HEAD
-      <workItem from="1549467781085" duration="7760000" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
-=======
-      <workItem from="1549467781085" duration="8801000" />
->>>>>>> 967c6db762f22b917b3496c8a2cf3fe2c5d9152c
+      <workItem from="1549467781085" duration="33903000" />
+      <workItem from="1549543335462" duration="15279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="116616000" />
-=======
-    <option name="totallyTimeSpent" value="121595000" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
-=======
-    <option name="totallyTimeSpent" value="122636000" />
->>>>>>> 967c6db762f22b917b3496c8a2cf3fe2c5d9152c
+    <option name="totallyTimeSpent" value="163017000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -638,39 +493,9 @@
     <frame x="53" y="25" width="1867" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4975" visible="true" weight="0.17826428" />
-      <window_info id="Structure" order="1" sideWeight="0.5025" side_tool="true" weight="0.17826428" />
-      <window_info id="npm" order="2" sideWeight="0.5025" side_tool="true" weight="0.17826428" />
-      <window_info id="Favorites" order="3" sideWeight="0.5025" side_tool="true" weight="0.17826428" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.32718122" />
-      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32885906" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32874355" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2147651" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.32885906" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17279124" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.13783635" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
-=======
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.13783635" />
->>>>>>> 967c6db762f22b917b3496c8a2cf3fe2c5d9152c
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.50080514" side_tool="true" weight="0.13783635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.2822625" />
+      <window_info auto_hide="true" id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.50080514" side_tool="true" type="SLIDING" weight="0.13783635" />
       <window_info id="Favorites" order="3" sideWeight="0.50080514" side_tool="true" weight="0.13783635" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.27321815" />
@@ -682,8 +507,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002746" side_tool="true" weight="0.3261339" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49972543" visible="true" weight="0.2386609" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.78143877" visible="true" weight="0.2386609" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.21856123" side_tool="true" visible="true" weight="0.2386609" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -694,20 +519,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/public/svg/503.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/svg/500.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/svg/403.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/svg/404.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-721">
@@ -718,7 +529,6 @@
     <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -739,27 +549,8 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/routes/console.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-=======
     <entry file="file://$PROJECT_DIR$/config/view.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CollectionController.php">
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-          <folding>
-            <element signature="e#40#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Item.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -838,15 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/SocialLoginButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="635">
@@ -867,28 +649,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/store/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaCarrinho.js" />
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="2351" column="21" selection-start-line="2351" selection-start-column="21" selection-end-line="2351" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/actions/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -914,13 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/reducers/ReceitaCarrinhoReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/reducers/ReceitaCarrinhoReducer.js" />
     <entry file="file://$PROJECT_DIR$/resources/js/components/RecipeDetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -941,9 +700,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/Recipe.php">
-=======
     <entry file="file://$PROJECT_DIR$/resources/js/reducers/rootReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -954,11 +710,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/HomeList.js">
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
+    <entry file="file://$PROJECT_DIR$/resources/views/HomeView.js" />
+    <entry file="file://$PROJECT_DIR$/resources/views/CartView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="1395" column="4" selection-start-line="1395" selection-start-column="4" selection-end-line="1395" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecipeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/HomeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/store/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="65" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/actions/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CollectionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="e#40#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/actions/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ColecsView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -967,38 +841,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ColecView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="70" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="70" />
+        <state relative-caret-position="353">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ColecsView.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/ReceitaView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+        <state relative-caret-position="288">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ReceitaBody.js">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        <state relative-caret-position="320">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1007,107 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/reducers/CarrinhoReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/actions/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/reducers/HomeListReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ReceitaView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecipeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="148" column="32" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-428">
-          <caret line="981" column="31" selection-start-line="981" selection-start-column="31" selection-end-line="981" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/CartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-=======
-    <entry file="file://$PROJECT_DIR$/resources/js/reducers/ColecListReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
-=======
-    <entry file="file://$PROJECT_DIR$/resources/views/CartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
->>>>>>> 967c6db762f22b917b3496c8a2cf3fe2c5d9152c
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state relative-caret-position="161">
-          <caret line="103" column="75" selection-start-line="103" selection-start-column="75" selection-end-line="103" selection-end-column="75" />
-=======
-        <state relative-caret-position="420">
-          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
->>>>>>> 393ea9615d965a5949d420ff69365900cf2ed99f
-=======
-        <state relative-caret-position="405">
-          <caret line="74" column="2" lean-forward="true" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
->>>>>>> 967c6db762f22b917b3496c8a2cf3fe2c5d9152c
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
         </state>
       </provider>
     </entry>
