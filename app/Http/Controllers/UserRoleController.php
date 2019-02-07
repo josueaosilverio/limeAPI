@@ -9,7 +9,7 @@ class UserRoleController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * @group User Roles
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -25,7 +25,7 @@ class UserRoleController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * @group User Roles
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -35,7 +35,7 @@ class UserRoleController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     * @group User Roles
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -53,7 +53,7 @@ class UserRoleController extends Controller
 
     /**
      * Display the specified resource.
-     *
+     * @group User Roles
      * @param  \App\UserRole  $userRole
      * @return \Illuminate\Http\Response
      */
@@ -71,7 +71,7 @@ class UserRoleController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     * @group User Roles
      * @param  \App\UserRole  $userRole
      * @return \Illuminate\Http\Response
      */
@@ -82,7 +82,7 @@ class UserRoleController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     * @group User Roles
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\UserRole  $userRole
      * @return \Illuminate\Http\Response
@@ -103,7 +103,7 @@ class UserRoleController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * @group User Roles
      * @param  \App\UserRole $userRole
      * @return \Illuminate\Http\Response
      * @throws \Exception

@@ -13,12 +13,12 @@ class RecipeController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * @group Recipe
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $result = Recipe::all();
+        $result = Recipe::with("items")->get();
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',
@@ -30,7 +30,7 @@ class RecipeController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * @group Recipe
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -40,13 +40,13 @@ class RecipeController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
+     * @group Recipe
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $data = $request->only(['name', 'recipe_cat', 'description', "est_price"]);
+        $data = $request->only(['name', 'recipe_cat', 'description', "est_price", "feeds", "kcal", "time", "image"]);
         $result = Recipe::create($data);
         $message = [
             'status' => '201',
@@ -60,13 +60,13 @@ class RecipeController extends Controller
 
     /**
      * Display the specified resource.
-     *
-     * @param  \App\Recipe  $recipe
+     * @group Recipe
+     * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      */
     public function show(Recipe $recipe)
     {
-        $result = $recipe;
+        $result = Recipe::with("items")->find($recipe->id);
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',
@@ -79,8 +79,8 @@ class RecipeController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
-     * @param  \App\Recipe  $recipe
+     * @group Recipe
+     * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      */
     public function edit(Recipe $recipe)
@@ -90,18 +90,22 @@ class RecipeController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Recipe  $recipe
+     * @group Recipe
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Recipe $recipe)
     {
-        $data = $request->only('name', 'recipe_cat', 'description', 'est_price');
+        $data = $request->only('name', 'recipe_cat', 'description', 'est_price', "feeds", "kcal", "time", "image");
         $recipe->name = $data['name'];
         $recipe->recipe_cat = $data['recipe_cat'];
         $recipe->description = $data['description'];
         $recipe->est_price = $data['est_price'];
+        $recipe->feeds = $data['feeds'];
+        $recipe->time = $data['time'];
+        $recipe->kcal = $data['kcal'];
+        $recipe->image = $data['image'];
         $recipe->save();
         $result = $recipe;
         $message = [
@@ -116,7 +120,7 @@ class RecipeController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * @group Recipe
      * @param  \App\Recipe $recipe
      * @return \Illuminate\Http\Response
      * @throws \Exception
@@ -135,6 +139,13 @@ class RecipeController extends Controller
     }
 
 
+    /**
+     * Looks for a recipe by name
+     * @group Recipe
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
     public function recipeByName(Request $request)
     {
         $data = $request->only(['name']);

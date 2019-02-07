@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\CollectionCategory;
 use Illuminate\Http\Request;
 
+/**
+ * Class CollectionCategoryController
+ * @group Collection Category
+ * @package App\Http\Controllers
+ */
 class CollectionCategoryController extends Controller
 {
     /**

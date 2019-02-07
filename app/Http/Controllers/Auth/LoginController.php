@@ -10,6 +10,7 @@ use Laravel\Socialite\Facades\Socialite;
 
 /**
  * Class LoginController
+ * @group Auth
  * @package App\Http\Controllers\Auth
  */
 class LoginController extends Controller
@@ -45,7 +46,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Redirect the user to the GitHub authentication page.
+     * Redirect the user to the Social authentication page.
      *
      * @param  string $provider
      * @return \Illuminate\Http\Response
@@ -56,7 +57,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Obtain the user information from GitHub.
+     * Obtain the user information from the social login.
      *
      * @param  string $provider
      * @return \Illuminate\Http\Response
@@ -65,29 +66,25 @@ class LoginController extends Controller
     {
         $socialUser = Socialite::driver($provider)->user();
 
-
+	$providerId = $socialUser->getId();
+	
         $user = User::where('email', $socialUser->getEmail())->first();
 	// $user->token;
-$parts = explode("@", $socialUser->getEmail());
-$username = $parts[0];
-if ($socialUser->getNickname() != null){
-$username = $socialUser->getNickname();
-}
+	$parts = explode("@", $socialUser->getEmail());
+	$username = $parts[0];
+	if ($socialUser->getNickname() != null){
+		$username = $socialUser->getNickname();
+	}
         if (!$user)
             $user = User::create([
                 'name' => $socialUser->getName(),
                 'username' => $username,
                 'email' => $socialUser->getEmail(),
-                'password',
-                'tutorial',
-                'provider_id' => $socialUser->getId(),
-                'provider' => $provider
+		'provider' => $provider,
+                'provider_id' => $providerId
             ]);
 
         Auth::login($user, true);
-
-        //TODO VER AS KEYS DO GOOGLE
-        //TODO VER A CENA DO HTTPS
 
         return redirect($this->redirectTo);
     }

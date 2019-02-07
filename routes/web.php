@@ -11,12 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
+    return view('app');
+});
+
+Route::fallback(function () {
+    return view('app');
+});
+
+Route::get('/api', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');

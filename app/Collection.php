@@ -22,6 +22,6 @@ class Collection extends Model
 
     public function recipes()
     {
-        return $this->belongsToMany('App\Recipe');
+        return $this->belongsToMany('App\Recipe')->with("items");
     }
 }

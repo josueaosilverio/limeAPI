@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Collection;
+use App\Recipe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+/**
+ * Class CollectionController
+ * @group Collection
+ * @package App\Http\Controllers
+ */
 class CollectionController extends Controller
 {
     /**
@@ -15,7 +21,7 @@ class CollectionController extends Controller
      */
     public function index()
     {
-        $result = Collection::all();
+        $result = Collection::with("recipes")->get();
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',
@@ -64,7 +70,7 @@ class CollectionController extends Controller
      */
     public function show(Collection $collection)
     {
-        $result = $collection;
+        $result = Collection::with("recipes")->find($collection->id);
         $message = [
             'status' => '200',
             'message' => 'Operation Successful',
@@ -174,4 +180,37 @@ class CollectionController extends Controller
 
     }
 
+
+    /**
+     * Adds recipes to collection
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Collection $collection
+     * @return \Illuminate\Http\Response
+     */
+    public function addRecipe(Request $request, Collection $collection)
+    {
+        $data = $request->only('recipes');
+        $recipes = [];
+
+        foreach ($data as $recipe){
+            $rec = Recipe::with("items")->find($recipe);
+            array_push($recipes, $rec);
+        }
+
+        $collection->recipes()->attach($recipes);
+        $result = $collection;
+        $message = [
+            'status' => '200',
+            'message' => 'Operation Successful',
+            'data' => $result
+        ];
+        return response($message, 200)
+            ->header('Content-Type', "application/json; charset=utf-8");
+
+    }
+
+
 }
+
+
