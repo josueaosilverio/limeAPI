@@ -84,7 +84,7 @@ export default class ReceitaHeader extends Component {
                     <StyledRow>
                         <StyledImage image={this.props.recipe.image}/>
                         <PriceDiv>{this.props.recipe.est_price}€</PriceDiv>
-                        <RecipeTitle>{this.props.recipe.name} à Lagareiro</RecipeTitle>
+                        <RecipeTitle>{this.props.recipe.name}</RecipeTitle>
                         <ExtraInfoContainer>
                             <i className="fas fa-user"></i> {this.props.recipe.feeds} doses <br/>
                             <i className="fas fa-burn"></i> {this.props.recipe.kcal}kcal <br/>
