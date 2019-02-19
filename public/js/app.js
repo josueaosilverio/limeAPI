@@ -39913,7 +39913,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledRow, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImage, {
         image: this.props.recipe.image
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PriceDiv, null, this.props.recipe.est_price, "\u20AC"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RecipeTitle, null, this.props.recipe.name, " \xE0 Lagareiro"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ExtraInfoContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PriceDiv, null, this.props.recipe.est_price, "\u20AC"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RecipeTitle, null, this.props.recipe.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ExtraInfoContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-user"
       }), " ", this.props.recipe.feeds, " doses ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-burn"
